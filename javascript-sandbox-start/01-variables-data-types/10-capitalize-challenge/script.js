@@ -10,7 +10,5 @@ firstLetter = myString.charAt(0).toUpperCase()
 newString = firstLetter + myString.slice(1, 9); 
 
 
-
-
 console.log(newString);
 
