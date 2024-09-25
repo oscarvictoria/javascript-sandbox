@@ -11,5 +11,5 @@ x = num.toFixed(3)
 
 x = num.toPrecision(3); 
 
-console.log(x); 
+console.log(num); 
 
