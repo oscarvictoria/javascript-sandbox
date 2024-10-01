@@ -62,7 +62,7 @@ const { title: firstBook } = library[0];
 console.log(firstBook);
 
 
-// Step 4. Turn the array of objects into JSON string
+// Step 4. Turn the array of objects into JSON string. 
 
 const libraryJSON = JSON.stringify(library); 
 
