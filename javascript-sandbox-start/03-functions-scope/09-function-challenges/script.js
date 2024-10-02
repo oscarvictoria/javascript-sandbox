@@ -33,3 +33,50 @@ console.log(`The temperature is ${getCelsius2(82)} \xB0C`)
   
 //   // Arrow Function
 //   const bob2 = (a) => a + 100;
+
+// ## Challenge 2
+
+// **Instructions:**
+
+// Create an arrow function called `minMax()` that takes in an array of numbers and returns an object with the minimum and maximum numbers in the array.
+
+function minMax(...nums) {
+    let obj = {
+        min: nums[0],
+        max: nums[0]
+    }
+
+    for (i = 0; i <= nums.length; i++) {
+
+        if (nums[i] < obj.min)  {
+
+            obj.min = nums[i]
+
+        } 
+
+        }
+
+        // if (numbers[i] < min) { min = numbers[i];
+
+
+    
+
+
+        if (nums[i] > obj.max) {
+            obj.max = nums[i]; 
+        } 
+
+        return (obj);
+    
+
+    }
+
+let min; 
+let max = numbers.max;    
+
+let numbers = minMax(3,8,9,2); 
+
+min = numbers.min
+
+console.log(max)
+
