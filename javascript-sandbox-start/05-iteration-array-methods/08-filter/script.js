@@ -33,24 +33,32 @@ const students = [
 
 // Display only student s 21 and over
 
+let newArr = []; 
+
 const overAge = students.filter(function (student) {
-  return student.age >= 21; 
+
+  
+   if (student.age >= 21) {
+    newArr.push(student.name)
+   } 
 
 }) 
 
-for(let i = 0; i <= students.length; i++) {
-  console.log(students.name); 
-}
+console.log(newArr)
+
+// for(let i = 0; i <= students.length; i++) {
+//   console.log(students.name); 
+// }
 
 
-let newArr = []; 
 
-for (let i = 0; i <= overAge.length - 1; i++) {
-  newArr.push(overAge[i].name); 
 
-}
+// for (let i = 0; i <= overAge.length - 1; i++) {
+//   newArr.push(overAge[i].name); 
 
-console.log(newArr); 
+// }
+
+// console.log(newArr); 
 
 
 
