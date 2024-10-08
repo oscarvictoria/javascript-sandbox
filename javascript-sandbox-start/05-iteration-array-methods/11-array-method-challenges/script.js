@@ -1,4 +1,27 @@
 // Challenge 1
+
+/* 
+
+**Instructions:**
+
+Take the `people` array and create an array 
+called `youngPeople` that stores objects with 
+ONLY `name` and `email` properties of 
+all the people that are 25 and under. 
+The `name` property should have their first 
+and last name.
+
+```JavaScript
+
+
+
+
+*/ 
+
+
+
+
+
 const people = [
   {
     firstName: 'John',
@@ -37,5 +60,56 @@ const people = [
   },
 ];
 
+let newArr = [
+  
+]
+
+const youngPeople = people.filter( function(person, index, arr)  {
+  return person.age <= 25; 
+  }).map(function(student){ 
+    return {
+      name: student.firstName + ' ' +  student.lastName,
+      email: student.email
+    }
+
+  })
+
+console.log(youngPeople); 
+
+/* 
+
+## Challenge 2
+
+**Instructions:**
+
+Add all of the positive numbers in the array.
+
+**Expected Result:**
+
+```JavaScript
+
+const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+console.log(positiveSum); // 79
+
+```
+
+*/ 
+
+
 // Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+let sum = 0
+
+numbers.forEach(function(num) {
+  if (num > 0) {
+    sum += num; 
+  }
+
+  }
+) 
+
+console.log(sum); 
+
+
