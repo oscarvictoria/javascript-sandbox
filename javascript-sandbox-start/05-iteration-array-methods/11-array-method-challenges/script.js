@@ -112,4 +112,29 @@ numbers.forEach(function(num) {
 
 console.log(sum); 
 
+// Challaenge 3 
+
+/* 
+Create a new array called capitalizedWords 
+with the words from the words array with 
+the first letter of each word capitalized.
+
+*/ 
+
+const words = ['coder', 'programmer', 'developer'];
+
+let capitalWords = []
+
+// console.log(capitalizedWords); // ['Coder', 'Programmer', 'Developer']
+
+
+const upperCase = words.map( function(word,index, arr){
+  let end = arr[index].slice(1);
+  let first = arr[index][0].toUpperCase(); 
+
+  return first + end; 
+
+})
+
+console.log(upperCase); 
 
