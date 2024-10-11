@@ -11,9 +11,14 @@ header.textContent = 'Grocery List';
 
 let form = document.querySelector('#item-input');
 
-let placeHolder = form.attributes[4]; 
+let text = form.attributes.getNamedItem('placeholder');
 
-placeHolder.textContent = 'Enter Item Here'; 
+text.textContent = 'Enter Item Here'
+
+console.log(text)
+
+
+// placeHolder.textContent = 'Enter Item Here'; 
 
 // Using querySelector to change text of the document
 
