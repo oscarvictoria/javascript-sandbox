@@ -18,7 +18,6 @@ text.textContent = 'Enter Item Here'
 console.log(text)
 
 
-// placeHolder.textContent = 'Enter Item Here'; 
 
 // Using querySelector to change text of the document
 
@@ -26,6 +25,10 @@ let button = document.querySelector('.btn')
 button.textContent =  "+"
 
 let itemList = document.querySelector('#item-list').querySelectorAll('li')
+
+let items = document.querySelectorAll('.items');
+console.log(items[0].innerText);
+
 
 
 // Using querySelector to change text of the document
