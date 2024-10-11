@@ -15,13 +15,15 @@ let placeHolder = form.attributes[4];
 
 placeHolder.textContent = 'Enter Item Here'; 
 
-
+// Using querySelector to change text of the document
 
 let button = document.querySelector('.btn')
 button.textContent =  "+"
 
 let itemList = document.querySelector('#item-list').querySelectorAll('li')
 
+
+// Using querySelector to change text of the document
 
 itemList[0].innerHTML =  `Mango
 <button class="remove-item btn-link text-red">
@@ -33,7 +35,7 @@ itemList[0].innerHTML =  `Mango
 
 // Use an array method to change Milk to Almond Milk 
 
-console.log(itemList)
+
 
 itemList.forEach(function(item) {
 
@@ -45,7 +47,7 @@ itemList.forEach(function(item) {
     </button>`
 
   }
-  
 
 
 })
+
