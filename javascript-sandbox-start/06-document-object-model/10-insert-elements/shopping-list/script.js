@@ -8,13 +8,19 @@ newItem.innerHTML = `Lettuce
 
 let list = document.querySelector('.items'); 
 
-list.insertAdjacentElement('beforeend', newItem);
+list.insertAdjacentElement('afterbegin', newItem);
 
 
 
 // insertAdjacentText Example
 
+
+list.insertAdjacentText("beforebegin", 'Rice');
+
 // insertAdjacentHTML example
+
+
+list.insertAdjacentHTML('afterend','<h3> This is the end of the list </h3>')
 
 // insertBefore Example
 
