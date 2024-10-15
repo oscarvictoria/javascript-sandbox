@@ -2,9 +2,12 @@
 
 let apples = document.querySelector('li:nth-child(1)');
 
-let newItem = document.createElement('li'); 
+
+function replace(item, currentItem) {
+
+let li = document.createElement('li'); 
 // newItem.appendChild(document.createTextNode('Grapes'));
-newItem.textContent = 'Paper'
+li.textContent = `${item}`
 
 
 
@@ -17,7 +20,14 @@ let icon = document.createElement('i');
 icon.className = 'fa-solid fa-xmark';
 
 button.appendChild(icon);
-newItem.appendChild(button)
+li.appendChild(button)
+
+currentItem.replaceWith(li)
+
+}
+
+
+replace('Fruit', apples); 
 
 
 
@@ -26,4 +36,4 @@ newItem.appendChild(button)
 
 
 
-apples.replaceWith(newItem);
+
