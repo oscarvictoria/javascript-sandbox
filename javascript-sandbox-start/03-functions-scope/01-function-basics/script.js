@@ -1,74 +1,41 @@
+// Callback functions
 
-// Higher Order Function 
+/* 
 
-function printName(callback, first, last) {
-  let result = first + ' ' + last; 
-  callback(result)
+Steps: 
 
-}
+1. Define higer order function. It should take a function as a parameter. We often 
+return the value of the callback function. 
 
-// Callback function
-function getNames(result) {
-  console.log(result)
+2. Define another function to insert in the parameter of the first function. 
 
-}
-const name = printName(getNames, 'Oscar', 'Gonzalez')
-console.log(name);
+3. Make the second function do something using the input parameter if you want it to use
+the parameter in the first function 
 
+4. Invoke the first function
 
-// Higher Order Function
-function smart(func, number) {
-  console.log(func(number))
+*/ 
 
-}
+// 1. 
 
-// Callback function 
-function addFive(num) {
-  return num + 5
-}
-
-const sum = smart(addFive, 5); 
-
-console.log(sum);
-
-
-
-
-
-// Another Example 
-
-//Callback
-
-function subtract(num) {
-  return num - 1
+function printData(func, val) {
+  let result = printHello()
+  console.log(result + ' ' + val)
 
 }
 
-// Higher Order Function
+// 2. 
 
-function result(callback, num) {
-  console.log(callback(num))
-  // subtract(num - 1)
+
+function printHello() {
+// 3. 
+
+  return 'Hello'
 }
 
 
-const value = result(subtract, 5)
-
-console.log(value)
-
-// More Examples 
 
 
-function advanceFunction(func, num) {
-  return func(num)
-  // divideByTwo(num)
-  // num / 2 
+// 4. 
 
-}
-
-function divideByTwo(num) {
-  return num / 2
-
-}
-
-console.log(advanceFunction(divideByTwo, 20)); 
+printData(printHello, 'Danny');
