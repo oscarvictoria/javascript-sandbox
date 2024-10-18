@@ -10,7 +10,7 @@ return the value of the callback function.
 2. Define another function to insert in the parameter of the first function. 
 
 3. Make the second function do something using the input parameter if you want it to use
-the parameter in the first function 
+a parameter in the first function 
 
 4. Invoke the first function
 
@@ -39,3 +39,20 @@ function printHello() {
 // 4. 
 
 printData(printHello, 'Danny');
+
+
+// Example 2
+
+function display(func, num) {
+  let randomNumber = getRandom(num)
+  console.log(`The random number between 0 and ${num} is ${randomNumber}`)
+
+}
+
+
+function getRandom(max) {
+  return Math.floor(Math.random() * max + 1);
+
+}
+
+display(getRandom, 4);
