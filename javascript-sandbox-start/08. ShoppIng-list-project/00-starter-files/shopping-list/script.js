@@ -22,18 +22,18 @@ function inputClicked(event) {
 
 function getItem(event) {
   event.preventDefault()
-  let item = event.target.value
+  let item = event.target.className
   console.log(item)
 
 }
 
 // Events 
 
-itemForm.addEventListener('click', getItem); 
+// itemForm.addEventListener('click', getItem); 
 
 // itemInput.addEventListener('click', getItem); 
 
-// body.addEventListener('click', getItem)
+body.addEventListener('click', getItem)
 
 
 // list.addEventListener('click', getItem)
