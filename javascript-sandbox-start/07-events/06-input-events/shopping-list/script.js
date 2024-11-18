@@ -22,4 +22,4 @@ textInput.addEventListener('input', getInput)
 
 selectInput.addEventListener('change', getInput); 
 
-checkInput.addEventListener('input', checkBox);
+checkInput.addEventListener('input', checkBox); 
