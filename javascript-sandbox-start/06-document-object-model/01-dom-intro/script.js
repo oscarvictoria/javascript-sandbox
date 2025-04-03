@@ -2,7 +2,13 @@
 
 // console.log(document.body.innerText);
 
-console.log(document.links[0])
+console.log(document.querySelector('#main')); 
+
+// Setting a new attribute to main 
+document.querySelector('#main h1').id = 'intro';
+document.querySelector('#main').className = 'main'; 
+
+// console.log(document.links[0])
 
 // document.body.innerHTML = '<h1> Hello World </h1>'
 
