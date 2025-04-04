@@ -59,3 +59,12 @@ itemList.forEach(function(item) {
 
 })
 
+// Using query selector to change the color of the items in the list 
+
+let list = document.querySelector('ul');
+let first = list.querySelector('li');
+let second = list.querySelector('li:nth-child(2)');
+console.log(second.innerText);
+first.style.color = 'red';
+second.style.backgroundColor = 'orange'
+
