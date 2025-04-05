@@ -22,13 +22,4 @@ firstChild.style.color = 'red';
 output = parent.childNodes; 
 
 
-
-
-
-
-
-
-
-
-
 console.log(output); 
