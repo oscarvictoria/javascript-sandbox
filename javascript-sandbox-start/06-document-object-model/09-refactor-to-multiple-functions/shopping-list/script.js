@@ -49,4 +49,4 @@ function createItem(item) {
 
 createItem('Chicken');
 
-createNewItem('Ice');
+createNewItem('Grapes');
