@@ -29,6 +29,17 @@ currentItem.replaceWith(li)
 
 replace('Fruit', apples); 
 
+function replaceFirstElement() {
+    let firstItem = document.querySelector('li:nth-child(1)'); 
+    let li = document.createElement('li'); 
+    li.textContent = 'First Item'; 
+
+    firstItem.replaceWith(li);
+  
+    
+}
+
+replaceFirstElement();
 
 
 
