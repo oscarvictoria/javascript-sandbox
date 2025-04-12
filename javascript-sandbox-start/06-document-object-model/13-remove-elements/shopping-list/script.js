@@ -11,4 +11,14 @@ function removeSecondChild() {
 }
 
 
+function removeNumber(number) {
+    const li = document.querySelector(`li:nth-child(${number})`); 
+    list.removeChild(li);
+}
+
+
+
+removeNumber(4); 
+
+removeNumber(1);
 
