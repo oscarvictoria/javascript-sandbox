@@ -12,3 +12,14 @@
 - `screenX` - The x position of the mouse click relative to the screen
 - `screenY` - The y position of the mouse click relative to the screen
 */
+
+const logo = document.querySelector('img'); 
+console.log(logo);
+
+function imageClicked(e) {
+    e.target.style.backgroundColor = 'black';
+    console.log('Image was clicked'); 
+
+}
+
+logo.addEventListener('click', imageClicked);
