@@ -17,8 +17,8 @@ function keypress(e) {
 
 
 
-// itemForm.addEventListener('keydown', keydown); 
+itemForm.addEventListener('keydown', keydown); 
 
-// itemForm.addEventListener('keyup', keyup); 
+itemForm.addEventListener('keyup', keyup); 
 
 itemForm.addEventListener('keydown', keydown); 
