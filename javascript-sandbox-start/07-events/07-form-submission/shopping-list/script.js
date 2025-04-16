@@ -8,14 +8,17 @@ e.preventDefault()
 
 }
 
-itemForm.addEventListener('submit', getValues); 
 
 
-function getData () {
+
+function getData (e) {
+    e.preventDefault()
   
     const formData = new FormData(itemForm); 
-    console.log(formData.name);
+    const item = formData.get('item')
+    console.log(item);
     
 }
 
-getData()
+itemForm.addEventListener('submit', getData); 
+
