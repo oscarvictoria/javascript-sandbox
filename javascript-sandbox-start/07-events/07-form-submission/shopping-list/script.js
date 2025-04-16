@@ -18,6 +18,8 @@ function getData (e) {
     const item = formData.get('item')
     const priority = formData.get('priority')
     console.log(item, priority);
+
+    
     
 }
 
