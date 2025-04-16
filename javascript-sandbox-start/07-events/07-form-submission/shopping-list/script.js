@@ -16,7 +16,8 @@ function getData (e) {
   
     const formData = new FormData(itemForm); 
     const item = formData.get('item')
-    console.log(item);
+    const priority = formData.get('priority')
+    console.log(item, priority);
     
 }
 
